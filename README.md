@@ -1,1 +1,1 @@
-# calibrate_medical_vlms
+# On Calibration of Modern Medical Vision-Language Models
