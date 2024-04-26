@@ -9,4 +9,4 @@ strategies showed that medical vision-language models tend to be largely unrelia
 
 ## Setup
 
-Requires python >= 3.10, [https://pypi.org/project/uncertainty-calibration/](uncertainty calibration) library, and [https://pypi.org/project/open-clip-torch/](OpenAi's CLIP) library.
+Requires python >= 3.10, [uncertainty calibration](https://pypi.org/project/uncertainty-calibration/) library, and [OpenAi's CLIP](https://pypi.org/project/open-clip-torch/) library.
