@@ -41,3 +41,29 @@ To run this code specify the relevant dataset and model:
 args = Args(dataset = dataset, model=model)
 extract_features(args)
 ```
+
+### zero_shot_experiments
+This notebook calculates the accuracy, ECE1 and ECE2 for each model and dataset for zero shot classification task.
+To run this code specify the metric and descriptor (prompting strategy):
+```
+args = Args(
+    metric="ece2",
+    descriptors=None
+)
+run_exp(args)
+```
+
+### few_shot_adaptation_exp
+This notebook determines the tradeoff between calibration and accuracy given a small validation set of data. The experiments explore which base medical CLIP model and recalibration method to use as well as how to split the data between the recalibrator and training the linear model for the downstream task.
+To run the code specify the dataset, model, recalibator, number of trials (n_trials) and the split size of the validation dataset (n_val)
+```
+args = Args(dataset = dataset, model=model, cal_fn=cal_fn, n_trials=n_trials, n_val=n_val)
+df = run_exp(args)
+```
+
+### produce_class_descriptors
+This notebook calls on OPENAI’s chat to generate the class descriptors for each dataset. The whole notebook can be run to store results in the relevant file path. 
+
+### ensemble_experiments
+This notebook repeats the exercise in zero_shot_experiements, except the results are averaged across an ensemble of prompting strategies and models per dataset. mega_ensemble() can be called to run the code.
+
