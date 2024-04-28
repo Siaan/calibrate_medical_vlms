@@ -27,4 +27,7 @@ The 12 datasets used can be downloaded from:
 | Osteo              | https://www.cancerimagingarchive.net/collection/osteosarcoma-tumor-assessment/          |
 | LC25000 (LUNG)     | https://huggingface.co/datasets/1aurent/LC25000                                         |
 | LC2500 (Colon)     | https://huggingface.co/datasets/1aurent/LC25000                                         |
-The 3 models used can be sourced from:
+
+The 3 models used can be sourced from: [QuiltNet](https://github.com/wisdomikezogwo/quilt1m), [BioMedCLIP](https://huggingface.co/microsoft/BiomedCLIP-PubMedBERT_256-vit_base_patch16_224), [PLIP](https://huggingface.co/vinid/plip).
+
+
